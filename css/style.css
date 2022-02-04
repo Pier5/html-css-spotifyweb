@@ -9,6 +9,7 @@
     --mediumblack: #141922;
     --lightblack: #282828;
     --green: #adff2f;
+    /* --lightgray: #d2d2d2; */
 }
 
 .clearfix::after {
@@ -22,13 +23,23 @@
     height: calc(100vh - 5rem);
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
 /* header */
 .head-container {
-    width: 15%;
+    width: 300px;
     height: calc(100vh - 5rem);
     background-color: black;
     float: left;
     display: flex;
+    flex-direction: column;
 }
 
 .name {
@@ -37,13 +48,41 @@
 }
 
 .logo {
-    width: 55%;
-    margin: 1.3rem;
+    width: 52%;
+    margin: 1.2rem;
 }
+
+.nav-playlist {
+    margin: .9rem 1.3rem;
+}
+
+.li-playlist {
+    padding-bottom: .6rem;
+}
+
+.head-icons {
+    width: 12%;
+}
+
+.text-playlist {
+    font-family: sans-serif;
+    font-size: 1rem;
+    vertical-align: super;
+    color: #808080;
+    padding-left: .4rem;
+}
+
+.text-playlist.one {
+    color: #f3f3f3;
+    padding-left: .4rem;
+}
+
+
+
 
 /* main */
 .main-container {
-    width: 85%;
+    width: calc(100% - 300px);
     height: calc(100vh - 5rem);
     background-color: var(--mediumblack);
     float: right;
@@ -54,7 +93,9 @@
     height: 5rem;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
+    /* z-index: 1; */
 }
+
 
 /* footer */
 .foot-container {
@@ -62,5 +103,6 @@
     height: 5rem;
     background-color: yellow;
     position: fixed;
+
 }
 
