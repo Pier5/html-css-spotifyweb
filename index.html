@@ -13,34 +13,58 @@
 
     <title>Spotify</title>
 </head>
-<body class="clearfix">
+<body>
 
-    <!-- sezione header che prenderà la larghezza della sola col destra in maniera fixed -->
-    <header class="head-container">
+    <!-- container che separa header e main dal footer -->
+    <div class="div-container clearfix">
 
-    </header>
+        <!-- sezione header che prenderà la larghezza della sola col destra in maniera fixed -->
+        <header class="head-container">
 
-    <!-- sezione main che comprende la col sinistra e la destra -->
-    <main class="main-container clearfix">
+            <!-- div per logo e scritta spotify -->
+            <div class="div-logo"></div>
 
+            <!-- lista nav e playlist -->
+            <nav class="nav-playlist"></nav>
 
-        <div class="col-left">
+            <!-- installa app e iconta utente -->
+            <div class="user"></div>
+           
+        </header>
+    
+        <!-- sezione main che comprende il tasto upgrade e le copertine degli album -->
+        <main class="main-container">
+    
+             <!-- bottone upgrade spotify -->
+             <div class="upgrade"> </div>
 
+             <!-- nav per ricerca rapida canzoni -->
+             <nav class="nav-search"></nav>
 
+            <!-- canzoni ascoltate di recente -->
+             <div class="listen"></div>
 
-        </div>
+             <!-- sezioni mix creati per l'utente -->
+             <div class="mix"></div>
 
+             <!-- sezione artisti più popolari -->
+             <div class="popular"></div>
 
-        <div class="col-right">
+        </main>
 
-
-        </div>
-
-
-    </main>
+    </div>
 
     <!-- sezione footer che prende la larghezza di tutto il main in maniera fixed -->
     <footer class="foot-container">
+
+        <!-- colonna sinistra footer con brano ascoltato e icone -->
+        <div class="col-left"></div>
+
+        <!-- colonna centrale che contiene il player -->
+        <div class="col-middle"></div>
+
+        <!-- colonna di destra con icone impostazioni e volume -->
+        <div class="col-right"></div>
 
     </footer>
     

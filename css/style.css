@@ -18,27 +18,21 @@
 }
 
 .head-container {
-    width: 85%;
-    height: 5rem;
-    background-color: red;
-    float: right;
-}
-
-/* .main-container { 
-} */
-
-.col-left {
     width: 15%;
     height: calc(100vh - 5rem);
     background-color: beige;
     float: left;
-
 }
 
-.col-right {
+.container {
+    width: 100%;
+    height: calc(100vh - 5rem);
+}
+
+.main-container {
     width: 85%;
-    height: calc(100vh - 10rem);
-    background-color: aqua;
+    height: calc(100vh - 5rem);
+    background-color: var(--mediumblack);
     float: right;
 }
 
