@@ -5,11 +5,10 @@
 }
 
 :root {
-    font-family: serif;
+    font-family: Arial, Helvetica, sans-serif;
     --mediumblack: #141922;
     --lightblack: #282828;
     --green: #adff2f;
-    /* --lightgray: #d2d2d2; */
 }
 
 .clearfix::after {
@@ -21,10 +20,15 @@
 .container {
     width: 100%;
     height: calc(100vh - 5rem);
+    position: relative;
 }
 
 ul {
     list-style: none;
+}
+
+li {
+    display: inline-block;
 }
 
 a {
@@ -35,7 +39,7 @@ a {
 /* header */
 .head-container {
     width: 220px;
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 10rem);
     background-color: black;
     float: left;
     display: flex;
@@ -86,11 +90,15 @@ a {
 }
 
 .pad {
-    padding-top: .6rem;
+    padding-top: .5rem;
 }
 
 .padleft {
     padding-left: 0;
+}
+
+.margin {
+    margin: 0 1.3rem;
 }
 
 .plus {
@@ -109,13 +117,47 @@ a {
     transform: translate(-50%, -50%);
     color: black;
     font-size: 1.1rem;
-
 }
 
 .text-playlist.medium {
     font-size: .9rem;
 }
 
+.text-playlist.one.username {
+    font-size: .9rem;
+    font-weight: bolder;
+    padding-left: .5rem;
+}
+
+.user {
+    background-color: black;
+    width: 220px;
+    height: 5rem;  
+    float: left;
+    z-index: 1;
+}
+
+.hr {
+    border: 1px solid #808080;
+    margin: 0 1.3rem;
+}
+
+.plus.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    padding: .5rem;
+}
+
+.profile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 90%;
+}
 
 
 /* main */
@@ -124,6 +166,7 @@ a {
     height: calc(100vh - 5rem);
     background-color: var(--mediumblack);
     float: right;
+    overflow-y: auto;
 }
 
 .upgrade {
@@ -131,7 +174,92 @@ a {
     height: 5rem;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
-    /* z-index: 1; */
+    z-index: 1;
+    position: relative;
+    
+}
+
+.text-playlist.subscription {
+    color: white;
+    text-transform: uppercase;
+}
+
+.btn-transparent {
+    padding: .6em 1.4em;
+    line-height: 1.2rem;
+    border-radius: 10em;
+    border: 1px solid white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: .8rem 0;
+}
+
+.text-playlist.search {
+    text-transform: uppercase;
+    padding: .8rem;
+    gap: 5px;
+}
+
+.ul-search {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.mark {
+    margin-top: .2rem;
+    margin-left: 2.7rem;
+    width: 30px;
+    border: .8px solid var(--green);
+}
+
+.listen,
+.mix,
+.popular {
+    margin: 1rem 1.5rem;
+}
+
+h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    padding-bottom: 1.1rem;
+}
+
+.songs {
+    vertical-align: top;
+    width: calc((100% - 168px) /6);
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.cover {
+    width: 100%;
+}
+
+.cover.circle {
+    border-radius: 50%;
+}
+
+h2 {
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin: .6rem 0;
+}
+
+.small {
+    text-align: center;
+    font-size: .9rem;
+    padding-left: 0; 
+    padding-bottom: .8rem;
+}
+
+.text-playlist.small.suggest {
+    text-align: left;
+    padding-bottom: 1.1rem;
 }
 
 
@@ -141,6 +269,5 @@ a {
     height: 5rem;
     background-color: yellow;
     position: fixed;
-
 }
 
