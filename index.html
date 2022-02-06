@@ -21,158 +21,188 @@
         <!-- sezione header che prenderà la larghezza della sola col destra in maniera fixed -->
         <header class="head-container">
 
-            <!-- div per logo e scritta spotify -->
-            <div class="name">
-                <img class="logo" src="img/logo.svg" alt="Logo Spotify">
-            </div>
+            <div class="head-top">
+				<!-- div per logo e scritta spotify -->
+				<div class="name">
+					<img class="logo" src="img/logo.svg" alt="Logo Spotify">
+				</div>
+	
+				<!-- lista nav e playlist -->
+				<nav class="nav-playlist">
+					<ul class>
+						<li class="li-playlist"><a class="a-playlist" href="#"><img class="head-icons" src="img/home.svg" alt="Icona Home"><span class="text-playlist one">Home</span></a></li>
+						<li class="li-playlist"><a class="a-playlist" href="#"><img class="head-icons" src="img/search.svg" alt="Icona Home"><span class="text-playlist">Cerca</span></a></li>
+						<li class="li-playlist"><a class="a-playlist" href="#"><img class="head-icons" src="img/libreria.svg" alt="Icona Home"><span class="text-playlist">La tua libreria</span></a></li>
+					</ul>                
+				</nav>
+				<nav class="nav-playlist one">
+					<ul>
+						<li class="li-playlist">
+							<span class="text-playlist one bigger">Playlist</span>
+							<ul class="pad overflow">
+								<li class="li-playlist"><a class="a-playlist" href="#"><div class="plus"><i class="fas fa-plus"></i></div><span class="text-playlist medium">Crea Playlist</span></a></li>
+								<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
+								<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
+								<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
+								<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
+								<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
+								<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
+								<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
 
-            <!-- lista nav e playlist -->
-            <nav class="nav-playlist">
-                <ul class>
-                    <li class="li-playlist"><a class="a-playlist" href="#"><img class="head-icons" src="img/home.svg" alt="Icona Home"><span class="text-playlist one">Home</span></a></li>
-                    <li class="li-playlist"><a class="a-playlist" href="#"><img class="head-icons" src="img/search.svg" alt="Icona Home"><span class="text-playlist">Cerca</span></a></li>
-                    <li class="li-playlist"><a class="a-playlist" href="#"><img class="head-icons" src="img/libreria.svg" alt="Icona Home"><span class="text-playlist">La tua libreria</span></a></li>
-                </ul>                
-            </nav>
-            <nav class="nav-playlist">
-                <ul>
-                    <li class="li-playlist">
-                        <span class="text-playlist one bigger">Playlist</span>
-                        <ul class="pad">
-                            <li class="li-playlist"><a class="a-playlist" href="#"><div class="plus"><i class="fas fa-plus"></i></div><span class="text-playlist medium">Crea Playlist</span></a></li>
-                            <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
-                            <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
-                            <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
-                            <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
-                            <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
-                            <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
-                            <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            
+			<div class="head-bottom">
+				<!-- installa app e icona utente -->
+				<div class="user">
+					<div class="nav-playlist">
+						
+						<a class="a-playlist" href="#"><img class="head-icons" src="img/download.svg" alt="Icona Home"><span class="text-playlist">Installa app</span></a>
+						
+					</div>
+					<div class="hr"></div>
+					<div class="nav-playlist">
+						<div class="plus circle"><img class="profile" src="img/profile.svg" alt="Immagine profilo"></div><span class="text-playlist one username">John Doe</span>
+					</div>
+				</div>
+			</div>
         </header>
 
         <!-- sezione main che comprende il tasto upgrade e le copertine degli album -->
         <main class="main-container">
+
+            <div class="main-top">
+                <!-- bottone upgrade spotify -->
+                <div class="upgrade">
+                    <a class="btn-transparent" href="#"><span class="text-playlist subscription">Effettua l'upgrade</span></a>
+                </div>
+            </div>
+
+            <div class="main-bottom">
+                <!-- nav per ricerca rapida canzoni -->
+                <nav class="nav-search">
+                   <ul class="ul-search">
+                       <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist search">In evidenza</span><div class="mark"></div></a></li>
+                       <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist search">Podcast</span></a></li>
+                       <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist search">Classifiche</span></a></li>
+                       <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist search">Generi e mood</span></a></li>
+                       <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist search">Nuove uscite</span></a></li>
+                       <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist search">Scopri</span></a></li>
+                   </ul>
+                </nav>
     
-             <!-- bottone upgrade spotify -->
-             <div class="upgrade">
-                <ul class="float">
-                    <li><a class="btn-transparent" href="#"><span class="text-playlist subscription">Effettua l'upgrade</span></a></li>
-                </ul>
-             </div>
-
-             <!-- nav per ricerca rapida canzoni -->
-             <nav class="nav-search">
-                <ul class="ul-search">
-                    <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist search">In evidenza</span><div class="mark"></div></a></li>
-                    <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist search">Podcast</span></a></li>
-                    <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist search">Classifiche</span></a></li>
-                    <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist search">Generi e mood</span></a></li>
-                    <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist search">Nuove uscite</span></a></li>
-                    <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist search">Scopri</span></a></li>
-                </ul>
-             </nav>
-
-            <!-- canzoni ascoltate di recente -->
-             <div class="listen">
-                <h1>Recently played</h1>
-                <div class="songs">
-                    <img class="cover" src="img/metal_lifting.jpg" alt="Copertine metal">
-                    <h2>Heavy Metal</h2>
-                    <div class="text-playlist small">Subtitle</div>
+               <!-- canzoni ascoltate di recente -->
+                <div class="listen">
+                   <h1>Recently played</h1>
+                   <div class="songs">
+                       <img class="cover" src="img/metal_lifting.jpg" alt="Copertine metal">
+                       <h2>Heavy Metal</h2>
+                       <div class="text-playlist small">Subtitle</div>
+                   </div>
+                   <div class="songs">
+                       <img class="cover" src="img/stranger.jpeg" alt="Copertina Stranger Things">
+                       <h2>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h2>
+                       <div class="text-playlist small">Kyle Dixon & Michael Stein</div>
+                   </div>
+                   <div class="songs">
+                       <img class="cover" src="img/aquietplace.jpeg" alt="Copertina A Quiet Place">
+                       <h2>A Quiet Place</h2>
+                       <div class="text-playlist small">Subtitle</div>
+                   </div>
+                   <div class="songs">
+                       <img class="cover" src="img/split.jpeg" alt="Copertina Split">
+                       <h2>Split</h2>
+                       <div class="text-playlist small">Subtitle</div>
+                   </div>
+                   <div class="songs">
+                       <img class="cover" src="img/cure.jpeg" alt="Copertina A Cure For Wellness">
+                       <h2>A cure for wellness</h2>
+                       <div class="text-playlist small">Subtitle</div>
+                   </div>
+                   <div class="songs">
+                       <img class="cover" src="img/sinister.jpeg" alt="Copertina Sinister">
+                       <h2>Sinister</h2>
+                       <div class="text-playlist small">Subtitle</div>
+                   </div>
                 </div>
-                <div class="songs">
-                    <img class="cover" src="img/stranger.jpeg" alt="Copertina Stranger Things">
-                    <h2>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h2>
-                    <div class="text-playlist small">Kyle Dixon & Michael Stein</div>
+    
+                <!-- sezioni mix create per l'utente -->
+                <div class="mix">
+                   <h1>Creato per John Doe</h1>
+                   <div class="text-playlist small suggest">Più ascolti, più accurati saranno i suggerimenti</div>
+                   <div class="songs">
+                       <img class="cover" src="img/radar.jpeg" alt="Copertina Release Radar">
+                       <h2>Release Radar</h2>
+                   </div>
+                   <div class="songs">
+                       <img class="cover" src="img/mixdaily.jpeg" alt="Copertina Daily Mix">
+                       <h2>Daily Mix 1</h2>
+                   </div>
                 </div>
-                <div class="songs">
-                    <img class="cover" src="img/aquietplace.jpeg" alt="Copertina A Quiet Place">
-                    <h2>A Quiet Place</h2>
-                    <div class="text-playlist small">Subtitle</div>
+    
+                <!-- sezione artisti più popolari -->
+                <div class="popular">
+                   <h1>Artisti più popolari</h1>
+                   <div class="text-playlist small suggest">Più ascolti, più accurati saranno i suggerimenti</div>
+                   <div class="songs">
+                       <img class="cover circle" src="img/youg.jpeg" alt="Copertina Lana Del Rey">
+                       <h2>Lana Del Rey</h2>
+                   </div>
+                   <div class="songs">
+                       <img class="cover circle" src="img/einaudi.jpeg" alt="Copertina Ludovico Einaudi">
+                       <h2>Ludovico Einaudi</h2>
+                   </div>
                 </div>
-                <div class="songs">
-                    <img class="cover" src="img/split.jpeg" alt="Copertina Split">
-                    <h2>Split</h2>
-                    <div class="text-playlist small">Subtitle</div>
-                </div>
-                <div class="songs">
-                    <img class="cover" src="img/cure.jpeg" alt="Copertina A Cure For Wellness">
-                    <h2>A cure for wellness</h2>
-                    <div class="text-playlist small">Subtitle</div>
-                </div>
-                <div class="songs">
-                    <img class="cover" src="img/sinister.jpeg" alt="Copertina Sinister">
-                    <h2>Sinister</h2>
-                    <div class="text-playlist small">Subtitle</div>
-                </div>
-             </div>
-
-             <!-- sezioni mix creati per l'utente -->
-             <div class="mix">
-                <h1>Creato per John Doe</h1>
-                <div class="text-playlist small suggest">Più ascolti, più accurati saranno i suggerimenti</div>
-                <div class="songs">
-                    <img class="cover" src="img/radar.jpeg" alt="Copertina Release Radar">
-                    <h2>Release Radar</h2>
-                </div>
-                <div class="songs">
-                    <img class="cover" src="img/mixdaily.jpeg" alt="Copertina Daily Mix">
-                    <h2>Daily Mix 1</h2>
-                </div>
-             </div>
-
-             <!-- sezione artisti più popolari -->
-             <div class="popular">
-
-                <h1>Artisti più popolari</h1>
-                <div class="text-playlist small suggest">Più ascolti, più accurati saranno i suggerimenti</div>
-                <div class="songs">
-                    <img class="cover circle" src="img/youg.jpeg" alt="Copertina Lana Del Rey">
-                    <h2>Lana Del Rey</h2>
-                </div>
-                <div class="songs">
-                    <img class="cover circle" src="img/einaudi.jpeg" alt="Copertina Ludovico Einaudi">
-                    <h2>Ludovico Einaudi</h2>
-                </div>
-
-             </div>
-
+            </div>
         </main>
-
-        <!-- installa app e iconta utente -->
-        <div class="user">
-            <nav class="nav-playlist margin">
-                <ul>
-                    <li class="li-playlist"><a class="a-playlist" href="#"><img class="head-icons" src="img/download.svg" alt="Icona Home"><span class="text-playlist">Installa app</span></a></li>
-                </ul>
-            </nav>
-            <div class="hr"></div>
-            <nav class="nav-playlist">
-                <ul>
-                    <li class="li-playlist pad"><div class="plus circle"><img class="profile" src="img/profile.svg" alt="Immagine profilo"></div><span class="text-playlist one username">John Doe</span></li>
-                </ul>
-            </nav>
-        </div>
-
     </div>
 
     <!-- sezione footer che prende la larghezza di tutto il main in maniera fixed -->
     <footer class="foot-container">
 
         <!-- colonna sinistra footer con brano ascoltato e icone -->
-        <div class="col-left"></div>
+        <div class="col-left">
+
+            <div class="footer-icon start">
+                <div class="mini">
+                    <img class="cover" src="img/sinister.jpeg" alt="">
+                </div>
+            </div>
+            <div class="footer-icon">
+                <div class="footer-text">
+                    <div class="text-playlist one">Sinister</div>
+                    <div class="text-playlist inline">Brano <span class="text-playlist">Nome</span></div>
+                </div>
+            </div>
+            <div class="footer-icon"><i class="far fa-heart head-icons"></i></div>
+            <div class="footer-icon "><i class="far fa-folder head-icons"></i></div>
+        </div>
 
         <!-- colonna centrale che contiene il player -->
-        <div class="col-middle"></div>
+        <div class="col-middle">
+            <div class="col-middle-top">
+                <div class="footer-icon"><i class="fas fa-random"></i></div>
+                <div class="footer-icon"><i class="fas fa-step-backward"></i></div>
+                <div class="footer-icon"><i class="far fa-play-circle"></i></div>
+                <div class="footer-icon"><i class="fas fa-step-forward"></i></div>
+                <div class="footer-icon"><i class="fas fa-redo-alt"></i></div>
+            </div>
+            <div class="col-middle-bottom">
+                <div class="text-playlist one">0:25</div>
+                <div class="time"><div class="time-remaining"><div class="btn-white"></div></div></div>
+                <div class="text-playlist one">4:35</div>
+            </div>
+        </div>
 
         <!-- colonna di destra con icone impostazioni e volume -->
-        <div class="col-right"></div>
-
+        <div class="col-right">
+            <div class="footer-icon"><i class="fas fa-list-ul"></i></div>
+            <div class="footer-icon"><i class="fas fa-tv"></i></div>
+            <div class="footer-icon"><i class="fas fa-volume-up"></i></div>
+            <div class="audio"><div class="audio-remaining"><div class="btn-audio"></div></div></div>
+        </div>
     </footer>
-    
 </body>
 </html>

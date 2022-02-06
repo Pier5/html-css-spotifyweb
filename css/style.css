@@ -8,6 +8,7 @@
     font-family: Arial, Helvetica, sans-serif;
     --mediumblack: #141922;
     --lightblack: #282828;
+    --mediumgray: #808080;
     --green: #adff2f;
 }
 
@@ -39,7 +40,7 @@ a {
 /* header */
 .head-container {
     width: 220px;
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 5rem);
     background-color: black;
     float: left;
     display: flex;
@@ -60,6 +61,11 @@ a {
     margin: .2rem 1.3rem;
 }
 
+.nav-playlist.one {
+	height: calc(100vh - 21.5rem);
+	overflow-y: auto;
+}
+
 .li-playlist {
     padding-bottom: .6rem;
 }
@@ -73,7 +79,7 @@ a {
     font-family: Verdana, Tahoma, sans-serif;
     font-size: .8rem;
     vertical-align: middle;
-    color: #808080;
+    color: var(--mediumgray);
     padding-left: .4rem;
 }
 
@@ -117,6 +123,7 @@ a {
     transform: translate(-50%, -50%);
     color: black;
     font-size: 1.1rem;
+    padding-right: 0;
 }
 
 .text-playlist.medium {
@@ -129,17 +136,21 @@ a {
     padding-left: .5rem;
 }
 
+.head-bottom {
+    width: 220px;
+    height: 6rem;
+}
+
 .user {
     background-color: black;
     width: 220px;
-    height: 5rem;  
-    float: left;
-    z-index: 1;
+    height: 5rem;
+    position: fixed;
 }
 
 .hr {
-    border: 1px solid #808080;
-    margin: 0 1.3rem;
+    border: 1px solid var(--mediumgray);
+    margin: .6rem 1.3rem .8rem;
 }
 
 .plus.circle {
@@ -166,17 +177,24 @@ a {
     height: calc(100vh - 5rem);
     background-color: var(--mediumblack);
     float: right;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
-.upgrade {
+.main-top {
     width: 100%;
     height: 5rem;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
-    z-index: 1;
-    position: relative;
-    
+	z-index: 1;
+}
+
+.upgrade {
+    width: calc(100% - 220px);
+    height: 5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .text-playlist.subscription {
@@ -185,14 +203,15 @@ a {
 }
 
 .btn-transparent {
+    margin-right: 30px;
     padding: .6em 1.4em;
     line-height: 1.2rem;
     border-radius: 10em;
     border: 1px solid white;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: .8rem 0;
+}
+
+.main-bottom {
+    margin-top: 6rem;
 }
 
 .text-playlist.search {
@@ -230,7 +249,7 @@ h1 {
 
 .songs {
     vertical-align: top;
-    width: calc((100% - 168px) /6);
+    width: calc((100% - 168px) / 6);
     display: inline-block;
     margin-right: 20px;
 }
@@ -267,7 +286,135 @@ h2 {
 .foot-container {
     width: 100%;
     height: 5rem;
-    background-color: yellow;
-    position: fixed;
+    background-color: var(--lightblack);
+    display: flex;
+    justify-content: space-between;
+	position: fixed;
 }
+
+.col-left,
+.col-right {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.footer-icon {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.start {
+    padding-left: .5rem;
+}
+
+.mini {
+    width: 45px;
+    height: 45px;
+    background-color: #adff2f;
+    display: flex;
+    align-items: center;
+}
+
+.inline {
+    display: flex;
+}
+
+.col-middle {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.col-middle-top,
+.col-middle-bottom {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.far {
+    color: var(--mediumgray);
+    padding-left: 1rem;
+}
+
+.fas {
+    color: white;
+    padding-right: 1.1rem;
+}
+
+.far.fa-play-circle {
+    color: white;
+    font-size: 30px;
+    padding-right: 2.1rem;
+}
+
+.time {
+    width: 500px;
+    height: 5px;
+    line-height: 5px;
+    border-radius: 5px;
+    background-color: var(--mediumgray);
+    margin: 0 1.2rem;
+}
+
+.time-remaining {
+    width: 100px;
+    height: 5px;
+    line-height: 5px;
+    background-color: #c1c1c1;
+    border-radius: 5px;
+    position: relative;
+}
+
+.btn-white {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    transform: translate(+800%, -30%);
+    display: none;
+}
+
+.audio {
+    width: 110px;
+    height: 5px;
+    line-height: 5px;
+    border-radius: 5px;
+    background-color: var(--mediumgray);
+    margin: 0 .5rem;
+}
+
+.audio-remaining {
+    width: 30px;
+    height: 5px;
+    line-height: 5px;
+    background-color: #c1c1c1;
+    border-radius: 5px;
+    position: relative;
+}
+
+.btn-audio {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    transform: translate(+200%, -30%);
+    display: none;
+}
+
+
+
+
+
+
+
 
