@@ -1056,7 +1056,7 @@ h2 {
     }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 566px) {
 
     /* header */
     .head-container {
@@ -1094,15 +1094,31 @@ h2 {
        display: none;
     }
 
+    .head-icons.install {
+        width: 150%;
+        padding-left: .1rem;
+        padding-bottom: 1rem;
+    }
+
+    .plus.circle {
+        width: 25px;
+        height: 25px;
+    }
+
 
    /* main */
    .main-container {
        width: calc(100% - 50px);
     }
 
+    .songs {
+        margin-right: 8px;
+        width: calc((100% - 45.6px) /2);
+    }
+
    .upgrade {
        width: calc(100% - 50px);
-     }
+    }
 
    .far.fa-play-circle.play-main {
     font-size: 80px;
@@ -1117,17 +1133,102 @@ h2 {
         font-size: 1.2rem;
     }
 
+    .btn-transparent {
+        margin-right: 20px;
+        padding: 0.4rem 1.2rem;
+        line-height: .9rem;
+    }
+
+    .text-playlist.search {
+        font-size: .7rem;
+    }
+
+    .mark {
+        width: 23px;
+        margin-left: 2.5rem;
+    }
+
     /* footer */
-
-    .head-icons.install {
-        width: 150%;
-        padding-left: .1rem;
-        padding-bottom: 1rem;
+    .mini {
+        width: 35px;
+        height: 35px;
     }
 
-    .plus.circle {
+    .footer-icon {
+        justify-content: stretch
+    }
+
+    .songname {
+        font-size: .5rem;
+        padding-right: 1.5rem;
+    }
+
+    .col-middle-top {
+        padding-left: 1.3rem;
+    }
+
+    .far {
+        padding-left: .8rem;
+    }
+
+    .far.fa-heart,
+    .far.fa-folder {
+        font-size: 12px;
+        padding-top: .4rem;
+    }
+
+    .fas {
+        font-size: 12px;
+        padding-right: 1rem;
+    }
+
+    .far.fa-play-circle.play-footer {
+        font-size: 28px;
+        padding-right: 1.7rem;
+    }
+
+    .text-playlist.one {
+        font-size: .5rem;
+    }
+
+    .text-playlist.one.ending {
+        padding-left: 0;
+    }
+
+    .time {
+        width: 120px;
+        height: 3px;
+        margin: 0 .6rem;
+    }
+
+    .time-remaining {
         width: 25px;
-        height: 25px;
+        height: 3px;
     }
+
+    .icons-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fas.fa-list-ul,
+    .fas.fa-tv,
+    .fas.fa-volume-up {
+        font-size: .6rem;
+        padding-right: .8rem;
+    }
+
+    .audio {
+        width: 80px;
+        height: 3px;
+        margin-left: 0;
+    }
+
+    .audio-remaining {
+        width: 20px;
+        height: 3px;
+    }
+
+    
 }
 
