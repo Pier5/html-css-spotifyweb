@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <!-- link fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spotify</title>
 </head>
 <body>
@@ -24,18 +23,19 @@
             <div class="head-top">
 				<!-- div per logo e scritta spotify -->
 				<div class="name">
-					<img class="logo" src="img/logo.svg" alt="Logo Spotify">
-				</div>
+					<img class="logo hidden" src="img/logo.svg" alt="Logo Spotify">
+                    <i class="spotilogo fab fa-spotify"></i>				
+                </div>
 	
 				<!-- lista nav e playlist -->
-				<nav class="nav-playlist">
+				<nav class="nav-playlist onlyicons">
 					<ul class>
-						<li class="li-playlist"><a href="#"><img class="head-icons" src="img/home.svg" alt="Icona Home"><span class="text-playlist one home">Home</span></a></li>
-						<li class="li-playlist"><a href="#"><img class="head-icons" src="img/search.svg" alt="Icona Home"><span class="text-playlist">Cerca</span></a></li>
-						<li class="li-playlist"><a href="#"><img class="head-icons" src="img/libreria.svg" alt="Icona Home"><span class="text-playlist">La tua libreria</span></a></li>
+						<li class="li-playlist"><a href="#"><img class="head-icons" src="img/home.svg" alt="Icona Home"><span class="text-playlist one home hidden">Home</span></a></li>
+						<li class="li-playlist"><a href="#"><img class="head-icons" src="img/search.svg" alt="Icona Home"><span class="text-playlist hidden">Cerca</span></a></li>
+						<li class="li-playlist"><a href="#"><img class="head-icons" src="img/libreria.svg" alt="Icona Home"><span class="text-playlist hidden">La tua libreria</span></a></li>
 					</ul>                
 				</nav>
-				<nav class="nav-playlist">
+				<nav class="nav-playlist hidden">
 					<ul>
 						<li class="li-playlist">
 							<span class="text-playlist one bigger">Playlist</span>
@@ -45,7 +45,7 @@
 						</li>
 					</ul>
 				</nav>
-                <nav class="nav-playlist one">
+                <nav class="nav-playlist one hidden">
                     <ul>
                         <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
 						<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
@@ -61,15 +61,15 @@
 			<div class="head-bottom">
 				<!-- installa app e icona utente -->
 				<div class="user">
-					<div class="nav-playlist">
+					<div class="nav-playlist onlyicons">
 						<a href="#">
                             <img class="head-icons install" src="img/download.svg" alt="Icona installazione">
-                            <span class="text-playlist">Installa app</span>
+                            <span class="text-playlist hidden">Installa app</span>
                         </a>
 					</div>
-					<div class="hr"></div>
-					<div class="nav-playlist">
-						<div class="plus circle"><img class="profile" src="img/profile.svg" alt="Immagine profilo"></div><span class="text-playlist one username">John Doe</span>
+					<div class="hr hidden"></div>
+					<div class="nav-playlist onlyicons">
+						<div class="plus circle"><img class="profile" src="img/profile.svg" alt="Immagine profilo"></div><span class="text-playlist one username hidden">John Doe</span>
 					</div>
 				</div>
 			</div>

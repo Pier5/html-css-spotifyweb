@@ -58,6 +58,12 @@ a {
     margin: 1.3rem;
 }
 
+.spotilogo {
+    color: white;
+    visibility: hidden;
+    width: 100px;
+}
+
 .nav-playlist {
     margin: .2rem 1.3rem;
 }
@@ -1047,6 +1053,81 @@ h2 {
     .audio-remaining {
         width: 20px;
         height: 3px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+    /* header */
+    .head-container {
+        width: 50px;
+        overflow: hidden;
+    }
+
+    .head-top {
+        overflow: visible;
+    }
+
+    .spotilogo{
+        visibility: visible;
+        font-size: 30px;
+        padding: 1rem .9rem 0;
+    }
+    .onlyicons {
+        margin-left: .9rem;
+    }
+
+    .head-icons {
+        width: 200%;
+    }
+
+    .name {
+        height: 3.5rem;
+    }
+
+    .head-bottom,
+    .user {
+        width: 50px;
+    }
+
+   .hidden {
+       display: none;
+    }
+
+
+   /* main */
+   .main-container {
+       width: calc(100% - 50px);
+    }
+
+   .upgrade {
+       width: calc(100% - 50px);
+     }
+
+   .far.fa-play-circle.play-main {
+    font-size: 80px;
+    transform: translate(+90%, +90%);
+    }
+
+    .nav-search {
+        line-height: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    /* footer */
+
+    .head-icons.install {
+        width: 150%;
+        padding-left: .1rem;
+        padding-bottom: 1rem;
+    }
+
+    .plus.circle {
+        width: 25px;
+        height: 25px;
     }
 }
 
