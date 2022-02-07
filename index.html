@@ -30,37 +30,43 @@
 				<!-- lista nav e playlist -->
 				<nav class="nav-playlist">
 					<ul class>
-						<li class="li-playlist"><a class="a-playlist" href="#"><img class="head-icons" src="img/home.svg" alt="Icona Home"><span class="text-playlist one">Home</span></a></li>
-						<li class="li-playlist"><a class="a-playlist" href="#"><img class="head-icons" src="img/search.svg" alt="Icona Home"><span class="text-playlist">Cerca</span></a></li>
-						<li class="li-playlist"><a class="a-playlist" href="#"><img class="head-icons" src="img/libreria.svg" alt="Icona Home"><span class="text-playlist">La tua libreria</span></a></li>
+						<li class="li-playlist"><a href="#"><img class="head-icons" src="img/home.svg" alt="Icona Home"><span class="text-playlist one">Home</span></a></li>
+						<li class="li-playlist"><a href="#"><img class="head-icons" src="img/search.svg" alt="Icona Home"><span class="text-playlist">Cerca</span></a></li>
+						<li class="li-playlist"><a href="#"><img class="head-icons" src="img/libreria.svg" alt="Icona Home"><span class="text-playlist">La tua libreria</span></a></li>
 					</ul>                
 				</nav>
-				<nav class="nav-playlist one">
+				<nav class="nav-playlist">
 					<ul>
 						<li class="li-playlist">
 							<span class="text-playlist one bigger">Playlist</span>
-							<ul class="pad overflow">
-								<li class="li-playlist"><a class="a-playlist" href="#"><div class="plus"><i class="fas fa-plus"></i></div><span class="text-playlist medium">Crea Playlist</span></a></li>
-								<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
-								<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
-								<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
-								<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
-								<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
-								<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
-								<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
+							<ul class="pad">
+								<li class="li-playlist padbottom"><a class="make-playlist" href="#"><div class="plus square"><i class="fas fa-plus"></i></div><span class="text-playlist medium">Crea Playlist</span></a></li>
 							</ul>
 						</li>
 					</ul>
 				</nav>
+                <nav class="nav-playlist one">
+                    <ul>
+                        <li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
+						<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
+						<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
+						<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
+						<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
+						<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
+						<li class="li-playlist"><a href="#" class="a-playlist"><span class="text-playlist padleft">Nome playlist</span></a></li>
+                    </ul>
+                </nav>
+
 			</div>
 
 			<div class="head-bottom">
 				<!-- installa app e icona utente -->
 				<div class="user">
 					<div class="nav-playlist">
-						
-						<a class="a-playlist" href="#"><img class="head-icons" src="img/download.svg" alt="Icona Home"><span class="text-playlist">Installa app</span></a>
-						
+						<a href="#">
+                            <img class="head-icons" src="img/download.svg" alt="Icona installazione">
+                            <span class="text-playlist">Installa app</span>
+                        </a>
 					</div>
 					<div class="hr"></div>
 					<div class="nav-playlist">
@@ -159,7 +165,7 @@
         </main>
     </div>
 
-    <!-- sezione footer che prende la larghezza di tutto il main in maniera fixed -->
+    <!-- sezione footer che prende la larghezza di tutto il body in maniera fixed -->
     <footer class="foot-container">
 
         <!-- colonna sinistra footer con brano ascoltato e icone -->
@@ -173,7 +179,7 @@
             <div class="footer-icon">
                 <div class="footer-text">
                     <div class="text-playlist one">Sinister</div>
-                    <div class="text-playlist inline">Brano <span class="text-playlist">Nome</span></div>
+                    <span class="text-playlist songname">Brano Nome</span>
                 </div>
             </div>
             <div class="footer-icon"><i class="far fa-heart head-icons"></i></div>

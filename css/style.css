@@ -45,6 +45,7 @@ a {
     float: left;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .name {
@@ -62,7 +63,7 @@ a {
 }
 
 .nav-playlist.one {
-	height: calc(100vh - 21.5rem);
+	height: calc(100vh - 26.5rem);
 	overflow-y: auto;
 }
 
@@ -81,6 +82,10 @@ a {
     vertical-align: middle;
     color: var(--mediumgray);
     padding-left: .4rem;
+}
+
+.text-playlist:hover {
+    color: white;
 }
 
 .text-playlist.one {
@@ -103,6 +108,10 @@ a {
     padding-left: 0;
 }
 
+.padbottom {
+    padding-bottom: 0;
+}
+
 .margin {
     margin: 0 1.3rem;
 }
@@ -114,6 +123,14 @@ a {
     display: inline-block;
     vertical-align: middle;
     position: relative;
+}
+
+.make-playlist:hover .square {
+    background-color: white;
+}
+
+.make-playlist:hover .text-playlist.medium {
+    color:white;
 }
 
 .fas.fa-plus {
@@ -138,7 +155,7 @@ a {
 
 .head-bottom {
     width: 220px;
-    height: 6rem;
+    height: 5rem;
 }
 
 .user {
@@ -177,7 +194,7 @@ a {
     height: calc(100vh - 5rem);
     background-color: var(--mediumblack);
     float: right;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .main-top {
@@ -210,8 +227,12 @@ a {
     border: 1px solid white;
 }
 
+.btn-transparent:hover {
+    transform: scale(1.1);
+}
+
 .main-bottom {
-    margin-top: 6rem;
+    padding-top: 5rem;
 }
 
 .text-playlist.search {
@@ -298,6 +319,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     cursor: pointer;
 }
 
@@ -320,8 +342,9 @@ h2 {
     align-items: center;
 }
 
-.inline {
-    display: flex;
+.songname:hover {
+    text-decoration: underline;
+    /* display: flex; */
 }
 
 .col-middle {
@@ -344,6 +367,10 @@ h2 {
     padding-left: 1rem;
 }
 
+.far:hover {
+    color: white;
+}
+
 .fas {
     color: white;
     padding-right: 1.1rem;
@@ -355,6 +382,10 @@ h2 {
     padding-right: 2.1rem;
 }
 
+.far.fa-play-circle:hover {
+    transform: scale(1.2);
+}
+
 .time {
     width: 500px;
     height: 5px;
@@ -362,6 +393,10 @@ h2 {
     border-radius: 5px;
     background-color: var(--mediumgray);
     margin: 0 1.2rem;
+}
+
+.time-remaining:hover {
+    background-color: var(--green);
 }
 
 .time-remaining {
@@ -380,7 +415,15 @@ h2 {
     height: 15px;
     border-radius: 50%;
     background-color: white;
-    display: none;
+    visibility: hidden;
+}
+
+.time:hover .time-remaining {
+    background-color: var(--green);
+}
+
+.time:hover .btn-white {
+    visibility: visible;
 }
 
 .audio {
@@ -400,7 +443,15 @@ h2 {
     border-radius: 5px;
     display: flex;
     align-items: center;
-    justify-content: flex-end
+    justify-content: flex-end;
+}
+
+.audio:hover .audio-remaining {
+    background-color: var(--green);
+}
+
+.audio:hover .btn-audio {
+    visibility: visible;
 }
 
 .btn-audio {
@@ -408,7 +459,7 @@ h2 {
     height: 12px;
     border-radius: 50%;
     background-color: white;
-    display: none;
+    visibility: hidden;
 }
 
 
