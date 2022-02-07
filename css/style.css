@@ -28,10 +28,6 @@ ul {
     list-style: none;
 }
 
-li {
-    display: inline-block;
-}
-
 a {
     text-decoration: none;
 }
@@ -46,6 +42,10 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.head-top {
+    overflow-y: hidden;
 }
 
 .name {
@@ -275,8 +275,42 @@ h1 {
     margin-right: 20px;
 }
 
+.song-play {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.far.fa-play-circle.play-main {
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(+105%, +95%);
+    visibility: hidden;
+    padding: 0;
+}
+
+.install {
+    display: inline-block;
+    width: 12%;
+}
+
+.install:hover {
+    background-image: url(../img/download.white.svg);
+}
+
 .cover {
     width: 100%;
+}
+
+.songs:hover .cover {
+    opacity: .5;
+}
+
+.songs:hover .far.fa-play-circle.play-main {
+    visibility: visible;
 }
 
 .cover.circle {
@@ -295,9 +329,14 @@ h2 {
     font-size: .9rem;
     padding-left: 0; 
     padding-bottom: .8rem;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: .8rem;
+    vertical-align: middle;
+    color: var(--mediumgray);
+    /* padding-left: .4rem; */
 }
 
-.text-playlist.small.suggest {
+.small.suggest {
     text-align: left;
     padding-bottom: 1.1rem;
 }
@@ -319,7 +358,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     cursor: pointer;
 }
 
@@ -376,13 +415,13 @@ h2 {
     padding-right: 1.1rem;
 }
 
-.far.fa-play-circle {
+.far.fa-play-circle.play-footer {
     color: white;
     font-size: 30px;
     padding-right: 2.1rem;
 }
 
-.far.fa-play-circle:hover {
+.far.fa-play-circle.play-footer:hover {
     transform: scale(1.2);
 }
 
@@ -462,10 +501,279 @@ h2 {
     visibility: hidden;
 }
 
+/* inizio media query */
+@media screen and (min-width: 920px) and (max-width: 1100px) {
 
+    /* header */
+    .head-container {
+        width: 180px;
+    }
 
+    .head-bottom,
+    .user {
+        width: 180px;
+    }
 
+    .logo {
+        width: 50%;
+    }
 
+    .head-icons {
+        width: 10%;
+    }
 
+    .text-playlist {
+        font-size: .7rem;
+    }
 
+    .text-playlist.one.home {
+        font-size: .7rem;
+    }
 
+    .text-playlist.one.bigger {
+        font-size: .8rem;
+    }
+
+    .plus.square {
+        width: 30px;
+        height: 30px;
+    }
+
+    .fas.fa-plus {
+        font-size: 1rem;
+    }
+
+    .text-playlist.medium {
+        font-size: .8rem;
+    }
+
+    .plus.circle {
+        width: 20px;
+        height: 20px;
+    }
+
+    .text-playlist.one.username {
+        font-size: .8rem;
+    }
+
+    /* main */
+    .main-container {
+        width: calc(100% - 180px);
+    }
+
+    .btn-transparent {
+        margin-right: 20px;
+        padding: 0.5rem 1.2rem;
+        line-height: 1rem;
+    }
+
+    .text-playlist.search {
+        font-size: .5rem;
+    }
+
+    .mark {
+        width: 18px;
+        margin-left: 2rem;
+    }
+
+    .listen,
+    .mix,
+    .popular {
+        margin: 1rem .8rem;
+    }
+
+    .songs {
+        margin-right: 8px;
+        width: calc((100% - 73.6px) /6);
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .far.fa-play-circle.play-main {
+        font-size: 35px;
+        transform: translate(+105%, +85%);
+    }
+    
+    h2 {
+        font-size: .8rem;
+        margin: 0.3rem 0;
+    }
+
+    .artist {
+        font-size: .7rem;
+    }
+
+    .small {
+        font-size: .6rem;
+    }
+
+    /* footer */
+    .mini {
+        width: 40px;
+        height: 40px;
+    }
+
+    .footer-icon {
+        justify-content: stretch
+    }
+
+    .far {
+        padding-left: .6rem;
+    }
+
+    .fas {
+        font-size: 12px;
+    }
+
+    .far.fa-play-circle.play-footer {
+        font-size: 30px;
+        padding-right: 1.7rem;
+    }
+
+    .text-playlist.one {
+        font-size: .5rem;
+    }
+
+    .time {
+        width: 350px;
+        height: 3px;
+    }
+
+    .time-remaining {
+        width: 70px;
+        height: 3px;
+    }
+
+    .fas.fa-list-ul,
+    .fas.fa-tv,
+    .fas.fa-volume-up {
+        font-size: .6rem;
+        padding-right: .8rem;
+    }
+
+    .audio {
+        width: 80px;
+        height: 3px;
+        margin-left: 0;
+    }
+
+    .audio-remaining {
+        width: 20px;
+        height: 3px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 920px) {
+    /* header */
+    .logo {
+        width: 50%;
+    }
+
+    .head-container {
+        width: 180px;
+    }
+
+    .head-bottom,
+    .user {
+        width: 150px;
+    }
+
+    .head-icons {
+        width: 10%;
+    }
+
+    .head-icons.install {
+        width: 11%;
+    }
+    
+    .text-playlist {
+        font-size: .7rem;
+    }
+
+    .text-playlist.one.home {
+        font-size: .7rem;
+    }
+
+    .text-playlist.one.bigger {
+        font-size: .7rem;
+    }
+
+    .plus.square {
+        width: 30px;
+        height: 30px;
+    }
+
+    .fas.fa-plus {
+        font-size: 1rem;
+    }
+
+    .text-playlist.medium {
+        font-size: .7rem;
+    }
+
+    .plus.circle {
+        width: 19px;
+        height: 19px;
+    }
+
+    .text-playlist.one.username {
+        font-size: .7rem;
+    }
+
+    /* main */
+    .main-container {
+        width: calc(100% - 180px);
+    }
+
+    .btn-transparent {
+        margin-right: 20px;
+        padding: 0.5rem 1.2rem;
+        line-height: 1rem;
+    }
+
+    .text-playlist.search {
+        font-size: .5rem;
+    }
+
+    .mark {
+        width: 18px;
+        margin-left: 2rem;
+    }
+
+    .listen,
+    .mix,
+    .popular {
+        margin: 1rem .8rem;
+    }
+
+    .songs {
+        margin-right: 8px;
+        width: calc((100% - 73.6px) /6);
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .far.fa-play-circle.play-main {
+        font-size: 35px;
+        transform: translate(+105%, +85%);
+    }
+    
+    h2 {
+        font-size: .8rem;
+        margin: 0.3rem 0;
+    }
+
+    .artist {
+        font-size: .7rem;
+    }
+
+    .small {
+        font-size: .6rem;
+    }
+
+    
+}
