@@ -333,7 +333,6 @@ h2 {
     font-size: .8rem;
     vertical-align: middle;
     color: var(--mediumgray);
-    /* padding-left: .4rem; */
 }
 
 .small.suggest {
@@ -367,6 +366,11 @@ h2 {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.icons-footer {
+    display: flex;
+    flex-direction: row;
 }
 
 .start {
@@ -502,7 +506,7 @@ h2 {
 }
 
 /* inizio media query */
-@media screen and (min-width: 920px) and (max-width: 1100px) {
+@media screen and (max-width: 920px) {
 
     /* header */
     .head-container {
@@ -558,6 +562,10 @@ h2 {
 
     /* main */
     .main-container {
+        width: calc(100% - 180px);
+    }
+
+    .upgrade {
         width: calc(100% - 180px);
     }
 
@@ -665,7 +673,7 @@ h2 {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 920px) {
+@media screen and (min-width: 768px) and (max-width: 919px) {
     /* header */
     .logo {
         width: 50%;
@@ -677,7 +685,7 @@ h2 {
 
     .head-bottom,
     .user {
-        width: 150px;
+        width: 180px;
     }
 
     .head-icons {
@@ -727,19 +735,23 @@ h2 {
         width: calc(100% - 180px);
     }
 
+    .upgrade {
+        width: calc(100% - 180px);
+    }
+
     .btn-transparent {
         margin-right: 20px;
-        padding: 0.5rem 1.2rem;
-        line-height: 1rem;
+        padding: 0.4rem 1.2rem;
+        line-height: .9rem;
     }
 
     .text-playlist.search {
-        font-size: .5rem;
+        font-size: .7rem;
     }
 
     .mark {
-        width: 18px;
-        margin-left: 2rem;
+        width: 23px;
+        margin-left: 2.5rem;
     }
 
     .listen,
@@ -750,7 +762,7 @@ h2 {
 
     .songs {
         margin-right: 8px;
-        width: calc((100% - 73.6px) /6);
+        width: calc((100% - 45.6px) /4);
     }
 
     h1 {
@@ -759,7 +771,7 @@ h2 {
 
     .far.fa-play-circle.play-main {
         font-size: 35px;
-        transform: translate(+105%, +85%);
+        transform: translate(+130%, +110%);
     }
     
     h2 {
@@ -775,5 +787,266 @@ h2 {
         font-size: .6rem;
     }
 
-    
+    /* footer */
+    .mini {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-icon {
+        justify-content: stretch
+    }
+
+    .songname {
+        font-size: .5rem;
+        padding-right: 1.5rem;
+    }
+
+    .far {
+        padding-left: .8rem;
+    }
+
+    .far.fa-heart,
+    .far.fa-folder {
+        font-size: 12px;
+    }
+
+    .fas {
+        font-size: 12px;
+        padding-right: 1rem;
+    }
+
+    .far.fa-play-circle.play-footer {
+        font-size: 28px;
+        padding-right: 1.7rem;
+    }
+
+    .text-playlist.one {
+        font-size: .5rem;
+    }
+
+    .time {
+        width: 250px;
+        height: 3px;
+    }
+
+    .time-remaining {
+        width: 45px;
+        height: 3px;
+    }
+
+    .fas.fa-list-ul,
+    .fas.fa-tv,
+    .fas.fa-volume-up {
+        font-size: .6rem;
+        padding-right: .8rem;
+    }
+
+    .audio {
+        width: 80px;
+        height: 3px;
+        margin-left: 0;
+    }
+
+    .audio-remaining {
+        width: 20px;
+        height: 3px;
+    }
 }
+
+@media screen and (min-width: 567px) and (max-width: 767px) {
+    /* header */
+    .logo {
+        width: 55%;
+    }
+
+    .head-container {
+        width: 180px;
+    }
+
+    .head-bottom,
+    .user {
+        width: 180px;
+    }
+
+    .head-icons {
+        width: 10%;
+    }
+
+    .head-icons.install {
+        width: 11%;
+    }
+    
+    .text-playlist {
+        font-size: .7rem;
+    }
+
+    .text-playlist.one.home {
+        font-size: .7rem;
+    }
+
+    .text-playlist.one.bigger {
+        font-size: .6rem;
+    }
+
+    .plus.square {
+        width: 30px;
+        height: 30px;
+    }
+
+    .fas.fa-plus {
+        font-size: 1rem;
+    }
+
+    .text-playlist.medium {
+        font-size: .7rem;
+    }
+
+    .plus.circle {
+        width: 19px;
+        height: 19px;
+    }
+
+    .text-playlist.one.username {
+        font-size: .7rem;
+    }
+
+    /* main */
+    .main-container {
+        width: calc(100% - 180px);
+    }
+
+    .upgrade {
+        width: calc(100% - 180px);
+    }
+
+    .btn-transparent {
+        margin-right: 20px;
+        padding: 0.4rem 1.2rem;
+        line-height: .9rem;
+    }
+
+    .text-playlist.search {
+        font-size: .7rem;
+    }
+
+    .mark {
+        width: 23px;
+        margin-left: 2.5rem;
+    }
+
+    .listen,
+    .mix,
+    .popular {
+        margin: 1rem .8rem;
+    }
+
+    .songs {
+        margin-right: 8px;
+        width: calc((100% - 45.6px) /2);
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .far.fa-play-circle.play-main {
+        font-size: 45px;
+        transform: translate(+130%, +110%);
+    }
+    
+    h2 {
+        font-size: .8rem;
+        margin: 0.3rem 0;
+    }
+
+    .artist {
+        font-size: .8rem;
+    }
+
+    .small {
+        font-size: .6rem;
+    }
+
+    /* footer */
+    .mini {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-icon {
+        justify-content: stretch
+    }
+
+    .songname {
+        font-size: .5rem;
+        padding-right: 1.5rem;
+    }
+
+    .col-middle-top {
+        padding-left: 1.3rem;
+    }
+
+    .far {
+        padding-left: .8rem;
+    }
+
+    .far.fa-heart,
+    .far.fa-folder {
+        font-size: 12px;
+        padding-top: .4rem;
+    }
+
+    .fas {
+        font-size: 12px;
+        padding-right: 1rem;
+    }
+
+    .far.fa-play-circle.play-footer {
+        font-size: 28px;
+        padding-right: 1.7rem;
+    }
+
+    .text-playlist.one {
+        font-size: .5rem;
+    }
+
+    .text-playlist.one.ending {
+        padding-left: 0;
+    }
+
+    .time {
+        width: 120px;
+        height: 3px;
+        margin: 0 .6rem;
+    }
+
+    .time-remaining {
+        width: 25px;
+        height: 3px;
+    }
+
+    .icons-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fas.fa-list-ul,
+    .fas.fa-tv,
+    .fas.fa-volume-up {
+        font-size: .6rem;
+        padding-right: .8rem;
+    }
+
+    .audio {
+        width: 80px;
+        height: 3px;
+        margin-left: 0;
+    }
+
+    .audio-remaining {
+        width: 20px;
+        height: 3px;
+    }
+}
+
