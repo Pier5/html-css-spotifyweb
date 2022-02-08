@@ -41,10 +41,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.head-top {
-    overflow-y: visible;
+    overflow-y: hidden;
 }
 
 .name {
