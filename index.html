@@ -10,28 +10,30 @@
 
     <!-- link fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>Spotify</title>
 </head>
 <body> 
 
     <!-- container che separa header e main dal footer -->
     <div class="container clearfix">
 
-        <!-- sezione header che prenderà la larghezza della sola col destra in maniera fixed -->
+        <!-- sezione header che rappresenta la nav sinistra -->
         <header class="head-container">
 
             <div class="head-top">
-				<!-- div per logo e scritta spotify -->
+				<!-- div per logo spotify -->
 				<div class="name">
 					<img class="logo hidden" src="img/logo.svg" alt="Logo Spotify">
                     <img class="spotilogo" src="img/logo-small.svg" alt="Logo Spotify">				
                 </div>
 	
-				<!-- lista nav e playlist -->
+				<!-- liste nav e playlist -->
 				<nav class="nav-playlist onlyicons active">
 					<ul>
 					    <li class="li-playlist space select"><a href="#"><img class="head-icons" src="img/home.svg" alt="Icona Home"><span class="text-playlist one home hidden">Home</span></a></li>
-						<li class="li-playlist space"><a href="#"><img class="head-icons opacity" src="img/search.svg" alt="Icona Home"><span class="text-playlist hidden">Cerca</span></a></li>
-						<li class="li-playlist space"><a href="#"><img class="head-icons opacity" src="img/libreria.svg" alt="Icona Home"><span class="text-playlist hidden">La tua libreria</span></a></li>
+						<li class="li-playlist space"><a href="#"><img class="head-icons opacity" src="img/search.svg" alt="Icona Cerca"><span class="text-playlist hidden">Cerca</span></a></li>
+						<li class="li-playlist space"><a href="#"><img class="head-icons opacity" src="img/libreria.svg" alt="Icona Libreria"><span class="text-playlist hidden">La tua libreria</span></a></li>
 				    </ul>                
 				</nav>
 				<nav class="nav-playlist hidden">
@@ -74,7 +76,7 @@
 			</div>
         </header>
 
-        <!-- sezione main che comprende il tasto upgrade e le copertine degli album -->
+        <!-- sezione main che comprende il tasto upgrade, la ricerca rapida e le copertine degli album -->
         <main class="main-container">
 
             <div class="main-top">
@@ -83,6 +85,7 @@
                     <a class="btn-transparent" href="#"><span class="text-playlist subscription">Effettua l'upgrade</span></a>
                 </div>
             </div>
+
             <div class="main-bottom">
                 <!-- nav per ricerca rapida canzoni -->
                     <nav class="nav-search">
@@ -104,7 +107,7 @@
                             <img class="cover" src="img/metal_lifting.jpg" alt="Copertine metal">
                             <i class="far fa-play-circle play-main"></i>
                         </div>
-                        <h2 class="artist">Heavy Metal</h2>
+                        <h2>Heavy Metal</h2>
                         <div class="small">Subtitle</div>
                     </div>
                     <div class="songs">
@@ -112,7 +115,7 @@
                             <img class="cover" src="img/stranger.jpeg" alt="Copertina Stranger Things">
                             <i class="far fa-play-circle play-main"></i>
                         </div>
-                        <h2 class="artist">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h2>
+                        <h2>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h2>
                         <div class="small">Kyle Dixon & Michael Stein</div>
                     </div>
                     <div class="songs">
@@ -120,7 +123,7 @@
                             <img class="cover" src="img/aquietplace.jpeg" alt="Copertina A Quiet Place">
                             <i class="far fa-play-circle play-main"></i>
                         </div>
-                        <h2 class="artist">A Quiet Place</h2>
+                        <h2>A Quiet Place</h2>
                         <div class="small">Subtitle</div>
                     </div>
                     <div class="songs">
@@ -128,7 +131,7 @@
                             <img class="cover" src="img/split.jpeg" alt="Copertina Split">
                             <i class="far fa-play-circle play-main"></i>
                         </div>
-                        <h2 class="artist">Split</h2>
+                        <h2>Split</h2>
                         <div class="small">Subtitle</div>
                     </div>
                     <div class="songs">
@@ -136,7 +139,7 @@
                             <img class="cover" src="img/cure.jpeg" alt="Copertina A Cure For Wellness">
                             <i class="far fa-play-circle play-main"></i>
                         </div>
-                        <h2 class="artist">A cure for wellness</h2>
+                        <h2>A cure for wellness</h2>
                         <div class="small">Subtitle</div>
                     </div>
                     <div class="songs">
@@ -144,7 +147,7 @@
                             <img class="cover" src="img/sinister.jpeg" alt="Copertina Sinister">
                             <i class="far fa-play-circle play-main"></i>
                         </div>
-                        <h2 class="artist">Sinister</h2>
+                        <h2>Sinister</h2>
                         <div class="small">Subtitle</div>
                     </div>
                 </div>
@@ -158,14 +161,14 @@
                             <img class="cover" src="img/radar.jpeg" alt="Copertina Release Radar">
                             <i class="far fa-play-circle play-main"></i>
                         </div>
-                        <h2 class="artist">Release Radar</h2>
+                        <h2>Release Radar</h2>
                     </div>
                     <div class="songs">
                         <div class="song-play">
                             <img class="cover" src="img/mixdaily.jpeg" alt="Copertina Daily Mix">
                             <i class="far fa-play-circle play-main"></i>
                         </div>
-                       <h2 class="artist">Daily Mix 1</h2>
+                       <h2>Daily Mix 1</h2>
                    </div>
                 </div>
     
@@ -178,14 +181,14 @@
                             <img class="cover circle" src="img/youg.jpeg" alt="Copertina Lana Del Rey">
                             <i class="far fa-play-circle play-main"></i>
                         </div>
-                        <h2 class="artist">Lana Del Rey</h2>
+                        <h2>Lana Del Rey</h2>
                     </div>
                     <div class="songs">
                         <div class="song-play">
                             <img class="cover circle" src="img/einaudi.jpeg" alt="Copertina Ludovico Einaudi">
                             <i class="far fa-play-circle play-main"></i>
                         </div>
-                        <h2 class="artist">Ludovico Einaudi</h2>
+                        <h2>Ludovico Einaudi</h2>
                     </div>
                 </div>
             </div>
@@ -199,13 +202,13 @@
         <div class="col-left">
             <div class="footer-icon start">
                 <div class="mini">
-                    <img class="cover" src="img/sinister.jpeg" alt="Cover canzone riprodotta">
+                    <img class="cover" src="img/sinister.jpeg" alt="Cover Sinister">
                 </div>
             </div>
             <div class="footer-icon">
                 <div class="footer-text">
                     <div class="text-playlist one">Sinister</div>
-                    <div class="text-playlist songname">Brano Nome</div>
+                    <div class="text-playlist songname">Brano <span>Nome</span></div>
                 </div>
             </div>
 

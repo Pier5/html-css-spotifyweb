@@ -340,9 +340,9 @@ h1 {
 
 h2 {
     color: white;
-    font-size: 1rem;
+    font-size: .9rem;
     text-align: center;
-    margin: .6rem 0;
+    margin: .8rem 0 .6rem;
 }
 
 .small {
@@ -531,7 +531,7 @@ h2 {
 }
 
 /* inizio media query */
-@media screen and (max-width: 920px) {
+@media screen and (min-width: 992px) and (max-width: 1900px) {
 
     /* header */
     .head-container {
@@ -629,12 +629,8 @@ h2 {
     }
     
     h2 {
-        font-size: .8rem;
-        margin: 0.3rem 0;
-    }
-
-    .artist {
         font-size: .7rem;
+        margin: .6rem 0 .3rem;
     }
 
     .small {
@@ -697,7 +693,7 @@ h2 {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 919px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
     /* header */
     .logo {
         width: 55%;
@@ -770,7 +766,7 @@ h2 {
     }
 
     .text-playlist.search {
-        font-size: .7rem;
+        font-size: .8rem;
     }
 
     .mark {
@@ -800,10 +796,6 @@ h2 {
     h2 {
         font-size: .8rem;
         margin: 0.3rem 0;
-    }
-
-    .artist {
-        font-size: .7rem;
     }
 
     .small {
@@ -877,7 +869,7 @@ h2 {
     }
 }
 
-@media screen and (min-width: 567px) and (max-width: 767px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
     /* header */
     .logo {
         width: 55%;
@@ -982,10 +974,6 @@ h2 {
         margin: 0.3rem 0;
     }
 
-    .artist {
-        font-size: .8rem;
-    }
-
     .small {
         font-size: .6rem;
     }
@@ -1072,7 +1060,7 @@ h2 {
     }
 }
 
-@media screen and (max-width: 566px) {
+@media screen and (max-width: 575px) {
 
     /* header */
     .head-container {
@@ -1182,6 +1170,11 @@ h2 {
 
     .footer-icon {
         justify-content: stretch
+    }
+
+    .text-playlist.songname {
+        display: flex;
+        flex-direction: column;
     }
 
     .songname {
