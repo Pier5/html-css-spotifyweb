@@ -32,7 +32,6 @@ a {
     text-decoration: none;
 }
 
-
 /* header */
 .head-container {
     width: 220px;
@@ -69,12 +68,28 @@ a {
 }
 
 .nav-playlist.one {
-	height: calc(100vh - 26.5rem);
+	height: calc(100vh - 26rem);
 	overflow-y: auto;
 }
 
 .li-playlist {
     padding-bottom: .6rem;
+}
+
+.nav-playlist.onlyicons.active {
+    margin: .2rem 0;
+}
+
+.li-playlist.space {
+    padding: 0 1.3rem 0.6rem;
+}
+
+.li-playlist.space.select {
+    padding-left: 1rem;
+}
+
+.select {
+    border-left: 4px solid var(--green);
 }
 
 .head-icons {
@@ -193,7 +208,6 @@ a {
     width: 90%;
 }
 
-
 /* main */
 .main-container {
     width: calc(100% - 220px);
@@ -226,11 +240,11 @@ a {
 }
 
 .btn-transparent {
-    margin-right: 30px;
-    padding: .6em 1.4em;
-    line-height: 1.2rem;
+    margin-right: 20px;
+    padding: 0.5rem 1.2rem;
+    border: 2px solid white;
     border-radius: 10em;
-    border: 1px solid white;
+
 }
 
 .btn-transparent:hover {
@@ -276,7 +290,7 @@ h1 {
 
 .songs {
     vertical-align: top;
-    width: calc((100% - 168px) / 6);
+    width: calc((100% - 145.6px) / 6);
     display: inline-block;
     margin-right: 20px;
 }
@@ -284,27 +298,20 @@ h1 {
 .song-play {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .far.fa-play-circle.play-main {
     color: white;
-    font-size: 80px;
+    font-size: 60px;
     position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(+105%, +95%);
     visibility: hidden;
     padding: 0;
-}
-
-.install {
-    display: inline-block;
-    width: 12%;
-}
-
-.install:hover {
-    background-image: url(../img/download.white.svg);
 }
 
 .cover {
@@ -346,7 +353,6 @@ h2 {
     padding-bottom: 1.1rem;
 }
 
-
 /* footer */
 .foot-container {
     width: 100%;
@@ -363,7 +369,6 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    /* flex-wrap: wrap; */
     cursor: pointer;
 }
 
@@ -393,7 +398,6 @@ h2 {
 
 .songname:hover {
     text-decoration: underline;
-    /* display: flex; */
 }
 
 .col-middle {
@@ -525,7 +529,7 @@ h2 {
     }
 
     .logo {
-        width: 50%;
+        width: 55%;
     }
 
     .head-icons {
@@ -578,7 +582,7 @@ h2 {
     .btn-transparent {
         margin-right: 20px;
         padding: 0.5rem 1.2rem;
-        line-height: 1rem;
+        border: 2px solid white;
     }
 
     .text-playlist.search {
@@ -607,7 +611,6 @@ h2 {
 
     .far.fa-play-circle.play-main {
         font-size: 35px;
-        transform: translate(+105%, +85%);
     }
     
     h2 {
@@ -649,6 +652,10 @@ h2 {
     .text-playlist.one {
         font-size: .5rem;
     }
+    
+    .text-playlist.one.ending {
+        padding: 0;
+    }
 
     .time {
         width: 350px;
@@ -682,7 +689,7 @@ h2 {
 @media screen and (min-width: 768px) and (max-width: 919px) {
     /* header */
     .logo {
-        width: 50%;
+        width: 55%;
     }
 
     .head-container {
@@ -747,8 +754,8 @@ h2 {
 
     .btn-transparent {
         margin-right: 20px;
-        padding: 0.4rem 1.2rem;
-        line-height: .9rem;
+        padding: 0.5rem 1.2rem;
+        border: 2px solid white;
     }
 
     .text-playlist.search {
@@ -768,7 +775,7 @@ h2 {
 
     .songs {
         margin-right: 8px;
-        width: calc((100% - 45.6px) /4);
+        width: calc((100% - 49.6px) /4);
     }
 
     h1 {
@@ -776,8 +783,7 @@ h2 {
     }
 
     .far.fa-play-circle.play-main {
-        font-size: 35px;
-        transform: translate(+130%, +110%);
+        font-size: 70px;
     }
     
     h2 {
@@ -928,8 +934,8 @@ h2 {
 
     .btn-transparent {
         margin-right: 20px;
-        padding: 0.4rem 1.2rem;
-        line-height: .9rem;
+        padding: 0.5rem 1.2rem;
+        border: 2px solid white;
     }
 
     .text-playlist.search {
@@ -949,7 +955,7 @@ h2 {
 
     .songs {
         margin-right: 8px;
-        width: calc((100% - 45.6px) /2);
+        width: calc((100% - 21.6px) /2);
     }
 
     h1 {
@@ -957,8 +963,7 @@ h2 {
     }
 
     .far.fa-play-circle.play-main {
-        font-size: 45px;
-        transform: translate(+130%, +110%);
+        font-size: 60px;
     }
     
     h2 {
@@ -1070,15 +1075,28 @@ h2 {
 
     .spotilogo{
         visibility: visible;
-        font-size: 30px;
+        font-size: 25px;
         padding: 1rem .9rem 0;
     }
+
+    .select {
+        border-left: none;
+    }
+
+    .li-playlist.space.select {
+        padding-left: .9rem;
+    }
+
+    .li-playlist.space {
+        padding-left: .9rem;
+    }
+
     .onlyicons {
         margin-left: .9rem;
     }
 
     .head-icons {
-        width: 200%;
+        width: 150%;
     }
 
     .name {
@@ -1096,7 +1114,6 @@ h2 {
 
     .head-icons.install {
         width: 150%;
-        padding-left: .1rem;
         padding-bottom: 1rem;
     }
 
@@ -1105,15 +1122,15 @@ h2 {
         height: 25px;
     }
 
-
    /* main */
    .main-container {
        width: calc(100% - 50px);
+       overflow-x: hidden;
     }
 
     .songs {
         margin-right: 8px;
-        width: calc((100% - 45.6px) /2);
+        width: calc((100% - 21.6px) /2);
     }
 
    .upgrade {
@@ -1121,8 +1138,7 @@ h2 {
     }
 
    .far.fa-play-circle.play-main {
-    font-size: 80px;
-    transform: translate(+90%, +90%);
+    font-size: 70px;
     }
 
     .nav-search {
@@ -1135,8 +1151,7 @@ h2 {
 
     .btn-transparent {
         margin-right: 20px;
-        padding: 0.4rem 1.2rem;
-        line-height: .9rem;
+        padding: 0.5rem 1.2rem;
     }
 
     .text-playlist.search {
@@ -1227,8 +1242,6 @@ h2 {
     .audio-remaining {
         width: 20px;
         height: 3px;
-    }
-
-    
+    }    
 }
 
