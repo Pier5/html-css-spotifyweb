@@ -60,7 +60,7 @@ a {
 .spotilogo {
     color: white;
     visibility: hidden;
-    width: 100px;
+    width: 55px;
 }
 
 .nav-playlist {
@@ -86,6 +86,14 @@ a {
 
 .li-playlist.space.select {
     padding-left: 1rem;
+}
+
+.opacity {
+    opacity: .6;
+}
+
+a:hover .opacity {
+    opacity: 1;
 }
 
 .select {
@@ -471,6 +479,13 @@ h2 {
     visibility: hidden;
 }
 
+.fas.fa-list-ul,
+.fas.fa-tv,
+.fas.fa-volume-up {
+    font-size: .8rem;
+    padding-right: .8rem;
+}
+
 .time:hover .time-remaining {
     background-color: var(--green);
 }
@@ -480,7 +495,7 @@ h2 {
 }
 
 .audio {
-    width: 110px;
+    width: 100px;
     height: 5px;
     line-height: 5px;
     border-radius: 5px;
@@ -634,10 +649,6 @@ h2 {
 
     .footer-icon {
         justify-content: stretch
-    }
-
-    .far {
-        padding-left: .6rem;
     }
 
     .fas {
@@ -810,7 +821,7 @@ h2 {
     }
 
     .songname {
-        font-size: .5rem;
+        font-size: .6rem;
         padding-right: 1.5rem;
     }
 
@@ -990,7 +1001,7 @@ h2 {
     }
 
     .songname {
-        font-size: .5rem;
+        font-size: .6rem;
         padding-right: 1.5rem;
     }
 
@@ -1075,7 +1086,6 @@ h2 {
 
     .spotilogo{
         visibility: visible;
-        font-size: 25px;
         padding: 1rem .9rem 0;
     }
 
@@ -1113,8 +1123,9 @@ h2 {
     }
 
     .head-icons.install {
-        width: 150%;
+        width: 140%;
         padding-bottom: 1rem;
+        padding-left: .1rem;
     }
 
     .plus.circle {
@@ -1174,7 +1185,7 @@ h2 {
     }
 
     .songname {
-        font-size: .5rem;
+        font-size: .6rem;
         padding-right: 1.5rem;
     }
 
@@ -1211,13 +1222,13 @@ h2 {
     }
 
     .time {
-        width: 120px;
+        width: 100px;
         height: 3px;
         margin: 0 .6rem;
     }
 
     .time-remaining {
-        width: 25px;
+        width: 20px;
         height: 3px;
     }
 
@@ -1230,7 +1241,7 @@ h2 {
     .fas.fa-tv,
     .fas.fa-volume-up {
         font-size: .6rem;
-        padding-right: .8rem;
+        padding-right: .5rem;
     }
 
     .audio {
@@ -1244,4 +1255,3 @@ h2 {
         height: 3px;
     }    
 }
-
