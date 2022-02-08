@@ -44,7 +44,7 @@ a {
 }
 
 .head-top {
-    overflow-y: hidden;
+    overflow-y: visible;
 }
 
 .name {
@@ -1070,10 +1070,6 @@ h2 {
     .head-container {
         width: 50px;
         overflow: hidden;
-    }
-
-    .head-top {
-        overflow: visible;
     }
 
     .spotilogo{
