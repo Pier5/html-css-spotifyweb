@@ -576,7 +576,7 @@ h2 {
 }
 
 /* inizio media query */
-@media screen and (min-width: 992px) and (max-width: 1900px) {
+@media screen and (min-width: 992px) and (max-width: 1400px) {
 
     /* header */
     .head-container {
